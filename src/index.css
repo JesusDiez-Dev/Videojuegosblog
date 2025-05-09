@@ -1,0 +1,761 @@
+*, *:before, *:after {
+    box-sizing: inherit;
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+h1,h2,h3{
+    font-family: "Titillium Web", sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+.header-logo{
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0rem;
+    background-color: #02A2DD;
+}
+.header-logo img{
+    width: 100px;
+    height: 100px;
+}
+.header-logo p{
+    font-weight: bold;
+}
+.header-nav {
+    background-color: #272626;
+    font-size: 1.2rem;
+}
+.header-nav ul{
+    display: flex;
+    justify-content: space-between;
+    /* background-color: blueviolet; */
+    justify-content: center;
+    padding: 10px 0rem;
+}
+.header-nav ul a{
+    margin-right: 1rem;
+    margin-left: 3.3rem;
+}
+
+@media (max-width: 1280px){
+    .header-nav ul a{
+        /* background-color: red; */
+        margin-right: 1px;
+        margin-right: 50px;
+    }
+    .header-logo{
+        position: fixed; /* Fija el header */
+        top: 0px; /* Colócalo en la parte superior */
+        left: 0;
+        width: 100%; 
+        background-color: #02A2DD; /* Fondo oscuro */
+        color: white; /* Color del texto */
+        padding: 30px 0; 
+        text-align: center; /* Centra el texto */
+        z-index: 1000; /* Asegura que el header quede por encima de otros elementos */
+    }
+    .header-nav{
+        position: fixed; /* Fija el header */
+        top: 9rem; /* Colócalo en la parte superior */
+        left: 0;
+        width: 100%; /* Asegura que ocupe todo el ancho de la pantalla */
+        background-color: #333; /* Fondo oscuro */
+        color: white; /* Color del texto */
+        padding: 2px 0; /* Un poco de espacio arriba y abajo */
+        text-align: center; /* Centra el texto */
+        z-index: 1000; /* Asegura que el header quede por encima de otros elementos */
+    }
+}
+
+
+
+/* ----------------------------------------
+  Estilos para el componente HEROE /* ----------------------------------------
+  Estilos para el componente HEROE /* ----------------------------------------
+  Estilos para el componente HEROE /* ----------------------------------------
+  Estilos para el componente HEROE /* ----------------------------------------
+---------------------------------------- */
+
+.hero{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.hero img{
+    width: 20rem;
+}
+
+.hero-izquierda{
+    width: 90rem;
+}
+.hero-izquierda img{
+    width: 100%;
+    height: 48.6rem;
+}
+
+.hero-izquierda p{
+    position: absolute;
+    top: 42rem;
+    left: 0rem;
+    width: 100%;
+    font-size: 2rem;
+    text-align: center;
+    z-index: 10; /* Asegura que el párrafo esté por encima de la imagen */
+    background: rgba(0, 0, 0, 0.6); /* Fondo semi-transparente para leer mejor */
+    color: white;
+    padding: 1rem 0rem;
+}
+
+
+
+
+.hero-derecha img{
+    width: 108%;
+    height: 14.97rem;
+    /* margin-left: 2rem; */
+}
+.aside-item{
+    position: relative;
+    display: inline-block;
+}
+.aside-item-link a{
+    position: absolute;
+    top: 11.65rem; /* Centra verticalmente */
+    left: 0; /* Centra horizontalmente */
+    color: white; /* El color del texto */
+    font-size: 1.2rem; /* Tamaño del texto */
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.7); /* Sombra para que sea más legible */
+    background-color: rgba(0,0,0,0.7);
+    width: 108%;
+    padding: 1rem 0rem;
+    text-align: center;
+}
+.aside-h2{
+    text-align: center;
+    font-size: 2.6rem;
+    margin-bottom: 5px;
+}
+.aside-h2 span{
+    color: #02A2DD;
+}
+
+@media (max-width: 1280px){
+    .hero{
+        display: flex;
+        flex-direction: column;
+    }
+    .hero-izquierda{
+        width: 100%;
+    }
+    .hero-izquierda img{
+        width: 100%;
+        height: 25rem;
+    }
+    .hero-izquierda p{
+        position: absolute;
+        top: 18.9rem;
+        left: 0rem;
+        width: 100%;
+        font-size: 1.2rem;
+        text-align: center;
+        z-index: 10; /* Asegura que el párrafo esté por encima de la imagen */
+        background: rgba(0, 0, 0, 0.6); /* Fondo semi-transparente para leer mejor */
+        color: white;
+        padding: 1rem 0rem;
+    }
+    .hero-derecha img{
+        width: 100%;
+        height: 15rem;
+    }
+    .aside-item a{
+        width: 100%;
+    }
+}
+
+/* ----------------------------------------
+  Estilos para el componente NoticiasDentroDelIndex /* ----------------------------------------
+  Estilos para el componente NoticiasDentroDelIndex /* ----------------------------------------
+  Estilos para el componente NoticiasDentroDelIndex /* ----------------------------------------
+  Estilos para el componente NoticiasDentroDelIndex /* ----------------------------------------
+---------------------------------------- */
+
+.masnoticias h2{
+    text-align: center;
+    font-weight: 900;
+    font-size: 4rem;
+    margin-bottom: 5rem;
+    margin-top: 10rem;
+}
+.masnoticias h2 span{
+    color: #02A2DD;
+}
+.masnoticias-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 15%;
+    margin-right: 10%;
+    /* background-color: red; */
+}
+.masnoticias-grid img{
+    width: 23rem;
+}
+.masnoticias-grid-item{
+    /* background-color: #02A2DD; */
+    width: 23rem;
+    height: 23rem;
+    margin-top: 2rem;
+}
+.masnoticias-grid-item h3{
+    font-size: 1.5rem;
+    color: black;
+}
+.masnoticias-grid-item h3:hover{
+    color: #02A2DD;
+    transition: 0.2s;
+}
+.masnoticias-grid-item p:nth-child(3){
+    color: #777780;
+    margin-top: 5px;
+}
+.masnoticias-grid-item i{
+    color: #02A2DD;
+}
+.masnoticias-grid-item-tag{
+    display: flex;
+    justify-content: space-evenly;
+    /* background-color: green; */
+    /* width: 15rem; */
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+.masnoticias-grid-item-tag-tag, .masnoticias-grid-item-tag-fecha{
+    display: flex;
+}
+.masnoticias-grid-item-tag-tag{
+    margin-left: -1.5rem;
+}
+.masnoticias-grid-item-tag-tag i, .masnoticias-grid-item-tag-fecha i{
+    margin-right: 1rem;
+    font-size: 1.3rem;
+}
+@media (max-width: 1280px){
+    .masnoticias-grid{
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+        margin-right: 0;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* ----------------------------------------
+  Estilos para el componente AnalisisDentroDelIndex /* ----------------------------------------
+  Estilos para el componente AnalisisDentroDelIndex /* ----------------------------------------
+  Estilos para el componente AnalisisDentroDelIndex /* ----------------------------------------
+  Estilos para el componente AnalisisDentroDelIndex /* ----------------------------------------
+---------------------------------------- */
+/* Estilos generales del contenedor de la cuadrícula */
+/* Contenedor principal de la cuadrícula */
+.masanalisis h2{
+    text-align: center;
+    font-weight: 900;
+    font-size: 4rem;
+    margin-bottom: 5rem;
+    margin-top: 10rem;
+}  
+
+.masanalisis-grid {
+    display: grid;
+    /* gap: 20px; */
+    grid-template-columns: repeat(3, 1fr);  /* Si quieres tres columnas */
+    margin-left: 15%;
+    margin-right: 10%;
+}
+  /* Estilos para cada ítem de la cuadrícula */
+.masanalisis-grid-item {
+    position: relative;  /* Para posicionar el texto sobre la imagen */
+    overflow: hidden;  /* Evitar que el texto se salga del contenedor */
+}
+  
+  /* Estilo de la imagen */
+.masanalisis-grid-item img {
+    width: 23rem;
+    height: 20rem;
+    display: block;
+    transition: opacity 0.3s ease;  /* Transición de la opacidad de la imagen */
+}
+  
+  /* Estilos para el texto */
+.masanalisis-grid-item p{
+    position: absolute;
+    top: 16.3rem;  /* Ajusta el espacio desde el borde inferior */
+    color: white;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.6);  /* Fondo transparente con opacidad */
+    padding: 20px 0rem;
+    width: 23rem;
+    font-weight: bold;
+    text-align: center;  /* Centra el texto */
+    opacity: 0;  /* Inicialmente oculto */
+    transition: opacity 0.3s ease;  /* Transición para que aparezca suavemente */
+}
+.masanalisis-grid-item span{
+    position: absolute;
+    bottom: 7rem;  /* Ajusta el espacio desde el borde inferior */
+    left: 9rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 2rem 1rem; 
+    border-radius: 50%; 
+    font-size: 16px;
+    font-weight: bold; 
+    text-align: center;   /* Fondo transparente con opacidad */
+    opacity: 0;  /* Inicialmente oculto */
+    transition: opacity 0.3s ease;  /* Transición para que aparezca suavemente */
+}
+  /* Aparecer el texto cuando se pasa el mouse */
+.masanalisis-grid-item:hover img {
+    opacity: 0.6;  /* Reduce la opacidad de la imagen */
+}
+  
+.masanalisis-grid-item:hover p, 
+.masanalisis-grid-item:hover span {
+    opacity: 1;  /* Hacer visible el texto */
+}
+
+
+@media (max-width: 1280px){
+    .masanalisis-grid{
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+        margin-right: 0;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+    .masanalisis-grid img{
+        width: 23rem;
+        height: 15rem;
+    }
+    .masanalisis-grid-item{
+        display: block;
+    }
+    .masanalisis-grid-item p{
+        position: absolute;
+        top: 11.3rem;  /* Ajusta el espacio desde el borde inferior */
+        color: white;
+        margin: 0;
+        background-color: rgba(0, 0, 0, 0.6);  /* Fondo transparente con opacidad */
+        padding: 20px 0rem;
+        width: 23rem;
+        font-weight: bold;
+        text-align: center;  /* Centra el texto */
+        opacity: 1; 
+        transition: opacity 0.3s ease;  /* Transición para que aparezca suavemente */
+    }
+    .masanalisis-grid-item span{
+        position: absolute;
+        bottom: 7rem;  /* Ajusta el espacio desde el borde inferior */
+        left: 9rem;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 2rem 1rem; 
+        border-radius: 50%; 
+        font-size: 16px;
+        font-weight: bold; 
+        text-align: center;   /* Fondo transparente con opacidad */
+        opacity: 0;  
+        transition: opacity 0.3s ease;  /* Transición para que aparezca suavemente */
+    }
+}
+/* ----------------------------------------
+  Estilos para el componente ActualidadDentroDelIndex /* ----------------------------------------
+  Estilos para el componente ActualidadDentroDelIndex /* ----------------------------------------
+  Estilos para el componente ActualidadDentroDelIndex /* ----------------------------------------
+  Estilos para el componente ActualidadDentroDelIndex /* ----------------------------------------
+---------------------------------------- */
+
+.actualidad h2{
+    text-align: center;
+    font-weight: 900;
+    font-size: 4rem;
+    margin-bottom: 5rem;
+    margin-top: 10rem;
+}
+
+.actualidad-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 15%;
+    margin-right: 10%;
+}
+.actualidad-grid-item{
+    width: 23rem;
+    height: 35rem;
+    margin-top: 2rem;
+    /* background-color: red; */
+    border: solid 1px #dddddd;
+    /* border: solid 1px #02A2DD; */
+
+}
+.actualidad-grid-item h3{
+    font-size: 1.5rem;
+}
+.actualidad-grid-item p{
+    color: #777780;
+    margin-top: 5px;
+    text-align: center;
+}
+.actualidad-grid-item-a a{
+    color: #02A2DD;
+    border-bottom: solid 2px #02A2DD;
+    padding: 5px 10px;
+    position: relative;
+    top: 2rem;
+    left: 8rem;
+    font-weight: bold;
+}
+.actualidad-grid-item-a a:hover{
+    color: white;
+    background-color: #02A2DD;
+    transition: 0.2s;
+}
+.actualidad-grid img{
+    width: 22.9rem;
+    height: 20rem;
+    border: solid 2px #02A2DD;   
+}
+
+@media (max-width: 1280px){
+    .actualidad-grid{
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+        margin-right: 0;
+        justify-content: center;
+        align-items: center;
+    }
+}
+/* ----------------------------------------
+  Estilos para el componente FooterDentroDelIndex /* ----------------------------------------
+  Estilos para el componente FooterDentroDelIndex /* ----------------------------------------
+  Estilos para el componente FooterDentroDelIndex /* ----------------------------------------
+  Estilos para el componente FooterDentroDelIndex /* ----------------------------------------
+---------------------------------------- */
+/* Footer.css */
+
+.footer {
+    background-color: #1e1e1e;
+    color: #fff;
+    padding: 40px;
+    text-align: center;
+    position: relative;
+    margin-top: 5rem;
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-text {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .social-links a {
+    text-decoration: none;
+  }
+  
+  .social-links img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .social-links a:hover img {
+    opacity: 0.7;
+  }
+  
+  /* =
+   🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢 
+   🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢 
+   🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢 
+   🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢 
+   🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢 
+   = */
+
+/* ----------------------------------------
+  Estilos para el componente HeroanalisisDentroDelAnalisisPage /* ----------------------------------------
+  Estilos para el componente HeroanalisisDentroDelAnalisisPage /* ----------------------------------------
+  Estilos para el componente HeroanalisisDentroDelAnalisisPage /* ----------------------------------------
+  Estilos para el componente HeroanalisisDentroDelAnalisisPage /* ----------------------------------------
+---------------------------------------- */
+.heroanalisis{
+    width: 100%;
+    background-color: black;
+    
+}
+.heroanalisis img{
+    width: 50%;
+    height: 30rem;
+    margin-left: 25%;
+    mask-image: linear-gradient(to left, black 80%, transparent);
+}
+@media (max-width: 1280px){
+    .heroanalisis img{
+        width: 100%;
+        height: 20rem;
+        margin-left: 0%;
+        margin-top: 9rem;
+        mask-image: linear-gradient(black 80%, transparent);
+    }
+}
+/* ----------------------------------------
+  Estilos para el componente AnalisisanalisisDentroDelAnalisisPage /* ----------------------------------------
+  Estilos para el componente AnalisisanalisisDentroDelAnalisisPage /* ----------------------------------------
+  Estilos para el componente AnalisisanalisisDentroDelAnalisisPage /* ----------------------------------------
+  Estilos para el componente AnalisisanalisisDentroDelAnalisisPage /* ----------------------------------------
+---------------------------------------- */
+
+
+.analisisanalisis{
+    /* background-color: red; */
+    width: 50%;
+    margin-left: 25%;
+    text-align: left;
+}
+.analisisanalisis-h2{
+    font-size: 3.2rem;
+    /* background-color: #02A2DD; */
+    margin-top: 5rem;
+}
+.analisisanalisis-div h2{
+    border-bottom: solid 1px #02A2DD;
+    font-size: 2rem;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    font-weight: 800;
+}
+.analisisanalisis p{
+    margin-top: 7px;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    font-weight: 400;
+    font-family: "Titillium Web", sans-serif;
+}
+.analisisanalisis img{
+    width: 100%;
+    margin: 2rem 0rem;
+}
+.analisisanalisis span{
+    color: #02A2DD;
+    font-weight: bold;
+}
+
+@media (max-width: 1280px){
+    .analisisanalisis{
+        /* background-color: red; */
+        width: 100%;
+        margin-left: 0;
+        
+    }
+    .analisisanalisis-h2{
+        font-size: 2.2rem;
+        /* background-color: #02A2DD; */
+        margin-top: 5rem;
+        text-align: center;
+    }
+    .analisisanalisis-div h2{
+        text-align: center;
+    }
+    .analisisanalisis p{
+        width: 90%;
+        /* background-color: red; */
+        margin-left: 1.4rem;
+        text-align: justify;
+        word-spacing: 0.1em; /* Ajusta el espacio entre palabras */
+        hyphens: auto; /* Permite la división automática de palabras largas */
+        
+    }
+}
+/* ----------------------------------------
+  Estilos para el componente AnalisisanalisisDentroDelAnalisisPage /* ----------------------------------------
+  Estilos para el componente AnalisisanalisisDentroDelAnalisisPage /* ----------------------------------------
+  Estilos para el componente AnalisisanalisisDentroDelAnalisisPage /* ----------------------------------------
+  Estilos para el componente AnalisisanalisisDentroDelAnalisisPage /* ----------------------------------------
+---------------------------------------- */
+/* App.css */
+/* App.css */
+/* App.css */
+/* Contenedor principal */
+/* App.css */
+.analisislike h2{
+    width: 50%;
+    margin-left: 25%;
+    border-bottom: solid 1px #02A2DD;
+    font-size: 2rem;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    font-weight: 800;
+    text-align: center;
+}
+.analisislike-div {
+    text-align: center;
+    margin-top: 50px;
+}
+  
+.analisislike-iconos {
+    margin-bottom: 20px;
+}
+  
+.analisislike-iconos{
+    /* font-size: 40px; */
+    margin: 0 15px;
+    /* padding: 10px; */
+    /* border: none; */
+    cursor: pointer;
+    /* background-color: transparent; */
+    display: flex;
+    justify-content: space-between;
+    /* background-color: red; */
+    width: 50%;
+    margin-left: 25%;
+}
+.analisislike-iconos i{
+    font-size: 40px;
+}
+.analisislike-iconos p{
+    font-size: 20px;
+    margin-top: 1.3rem;
+    font-family: "Titillium Web", sans-serif;
+}
+  
+/* .analisislike-iconos i:hover {
+    transform: scale(1.2);
+    transition: 0.2s;
+} */
+/* .analisislike-iconos p:hover {
+    transition: 0.2s;
+} */
+
+  
+.analisislike-iconos-like {
+    color: #4CAF50; /* Color verde para Like */
+    margin-right: 5rem;
+}
+  
+.analisislike-iconos-dislike {
+    color: #F44336; /* Color rojo para Dislike */
+}
+  
+.analisislike-resultado {
+    margin-top: 20px;
+    font-size: 24px;
+}
+  
+.recomendado {
+    color: green;
+    font-weight: bold;
+}
+  
+.no-recomendado{
+    color: red;
+    font-weight: bold;
+}
+  
+.neutral {
+    color: gray;
+}
+  
+.analisislike-resultado-detalles {
+    margin-top: 20px;
+    font-size: 18px;
+}
+/* ----------------------------------------
+  Estilos para el componente AnalisisfinalDentroDelAnalisisPage /* ----------------------------------------
+  Estilos para el componente AnalisisfinalDentroDelAnalisisPage /* ----------------------------------------
+  Estilos para el componente AnalisisfinalDentroDelAnalisisPage /* ----------------------------------------
+  Estilos para el componente AnalisisfinalDentroDelAnalisisPage /* ----------------------------------------
+---------------------------------------- */ 
+.analisisfinal{
+    /* background-color: red; */
+    width: 50%;
+    margin-left: 25%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+}
+.analisisfinal-izquierda-tags-comentario, .analisisfinal-izquierda-tags-tag, .analisisfinal-izquierda-tags-fecha{
+    /* background-color: #4CAF50; */
+    display: flex;
+    margin-top: 1rem;
+}
+.analisisfinal-izquierda i{
+    margin-right: 1rem;
+    font-size: 1.6rem;
+    color: #02A2DD;
+}
+.analisisfinal-izquierda-tags p{
+  font-size: 0.9231rem;
+  color: #777777;
+  font-weight: 400;
+  text-align: left;
+  margin-top: 2px;
+}
+
+.analisisfinal-derecha-estrellas i{
+    color: #ff6900;
+    margin-left: 15px;
+    font-size: 2rem;
+}
+.analisisfinal-derecha h2{
+    text-align: center;
+    margin-top: 15px;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.analisisfinal-derecha-i{
+    font-size: 3rem;
+    margin-left: 7rem;
+    margin-top: 1px;
+}
+@media (max-width: 1280px){
+    .analisisfinal{
+        /* background-color: red; */
+        width: 100%;
+        margin-left: 0;
+        margin-left: 1.4rem;
+    }
+    .analisisfinal-derecha h2{
+        text-align: center;
+        margin-right: 2.5rem;
+    }
+    .analisisfinal-derecha-estrellas{
+        width: 10rem;
+        margin-top: 1rem;
+    }
+    .analisisfinal-derecha-i{
+        margin-left: 3rem;
+    }
+}
